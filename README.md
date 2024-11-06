@@ -3,6 +3,14 @@
 
 **Hosted App**: [https://ga-with-mab-for-knapsack.streamlit.app](https://ga-with-mab-for-knapsack.streamlit.app)
 
+### Project Structure
+
+- app.py: Main application file, handling the UI, input collection, and displaying results.
+- knapsack.py: Contains the KnapsackProblem class, which defines the problem structure and solution evaluation.
+- genetic_algorithm.py: Implements the core GA logic, including selection, crossover, mutation, and logging of each generation’s metrics.
+- mab_agent.py: Defines the MAB agent responsible for adaptively tuning the mutation rate using the UCB1 (Upper Confidence Bound) formula.
+- environment.py: Coordinates the GA and MAB to create an interactive environment where RL optimizes the GA’s mutation rate.
+
 ## 🔍 Overview
 
 Using **Reinforcement Learning (RL)** to optimize the **mutation rate** in a **Genetic Algorithm (GA)** for the Knapsack Problem. A **Multi-Armed Bandit (MAB)** approach tunes the mutation rate dynamically.
